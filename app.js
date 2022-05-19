@@ -7,7 +7,15 @@ app.get("/", (req, res) => {
 });
 
 app.get("/aa", (req, res) => {
-  res.send("Hello World!, aa");
+  res.send("Hello World!, aaa");
+});
+
+app.get("/bb", (req, res) => {
+  res.send("Hello World!, bbb");
+});
+
+app.get("/cc", (req, res) => {
+  res.send("Hello World!, ccc");
 });
 
 app.listen(port, () => {
