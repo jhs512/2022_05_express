@@ -6,16 +6,22 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/aa", (req, res) => {
-  res.send("Hello World!, aaa");
-});
-
-app.get("/bb", (req, res) => {
-  res.send("Hello World!, bbb");
-});
-
-app.get("/cc", (req, res) => {
-  res.send("Hello World!, ccc");
+app.get("/todos", (req, res) => {
+  const todos = [
+    {
+      id: 3,
+      content: "내용3",
+    },
+    {
+      id: 2,
+      content: "내용3",
+    },
+    {
+      id: 1,
+      content: "내용3",
+    },
+  ];
+  res.json(todos);
 });
 
 app.listen(port, () => {
